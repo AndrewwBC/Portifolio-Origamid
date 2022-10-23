@@ -1,0 +1,165 @@
+.fundoescuro {
+    background-color: #181818;
+    height: 100vh;
+}
+
+.fundomain {
+    max-width: 1200px;
+    padding: 120px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0px 100px;
+}
+
+.fundomain .subtitulo {
+    color: rgb(0, 0, 0);
+}
+
+.divp {
+    color: #a1a1a1;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.formação {
+    display: flex;
+    opacity: 0;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    transform: translate3d(0px,-60px,0px);
+}
+
+.formação div {
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+.form {
+    color: white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+}
+
+.form {
+    width: 33%;
+    position: relative;
+}
+
+.form span {
+    color: #b3b3b3;
+}
+
+.formextra {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.formextra h3{
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.cursosInt{
+    position: relative;
+    color: #000;
+}
+.idiomas{
+    position: relative;
+    margin-bottom: 32px;
+    color: #000;
+}
+
+.cursosInt::before{
+    content: " ";
+    width: 32px;
+    height: 32px;
+    left: -32px;
+    top: -2px;
+    background-image: url("./img/cursos.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+.idiomas::before{
+  content: " ";
+  width: 32px;
+  height: 32px;
+  left: -32px;
+  background-image: url("./img/idiomas.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+.form-content p{
+    margin-bottom: 16px;
+    color: #e9e9e9;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.form-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    left: -4px;
+    top: 20px;
+}
+
+.form-content-idiomas{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content-idiomas p {
+    margin-bottom: 16px;
+    color: #909090;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.spanColor{
+    color: #e9e9e9;
+}
+
+
+
+@media(max-width:800px) {
+    .fundomain {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:800) {
+    .divp {
+        word-break: keep-all;
+    }
+}
