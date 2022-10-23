@@ -46,7 +46,7 @@
     height: 130px;
     top: -60px;
     left: 25px;
-    background-image: url(/img/detalhe.svg);
+    background-image: url('./img/detalhe.svg');
     background-repeat: no-repeat;
     position: absolute;
 }
