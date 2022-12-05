@@ -21,3 +21,16 @@ $(document).scroll(function () {
     });
   }
 });
+
+$('nav a').click(function () {
+  let href = $(this).attr('href');
+  let offSet = $(href).offset().top;
+
+  $('html, body').animate(
+    {
+      scrollTop: offSet,
+    },
+    500,
+  );
+  console.log(offSet);
+});
